@@ -5696,7 +5696,7 @@ function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
     icon: "i-simple-icons-gmail",
     color: "neutral",
     variant: "ghost",
-    to: "3472886@gmail.com",
+    to: "mailto:3472886@gmail.com",
     target: "_blank",
     "aria-label": "X"
   }, null, _parent));
@@ -7458,7 +7458,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       const _component_UNavigationMenu = _sfc_main$b;
       const _component_ActionsLogo = __nuxt_component_2$1;
       if (unref(visible)) {
-        _push(ssrRenderComponent(_component_UFooter, mergeProps({ class: "border border-t-gray-200 border-b-0 border-x-0" }, _attrs), {
+        _push(ssrRenderComponent(_component_UFooter, mergeProps({ class: "border border-t-gray-200 border-b-0 border-x-0 mt-10" }, _attrs), {
           left: withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
               _push2(`<p class="text-muted text-sm"${_scopeId}>Архипова Татьяна © ${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())}</p>`);
@@ -7556,4 +7556,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { _default as default };
-//# sourceMappingURL=default-B-zFoPSw.mjs.map
+//# sourceMappingURL=default-4NJeSe7C.mjs.map

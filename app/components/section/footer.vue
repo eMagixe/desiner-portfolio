@@ -11,7 +11,7 @@ const visible = computed(() => {
 </script>
 
 <template>
-	<UFooter v-if="visible" class="border border-t-gray-200 border-b-0 border-x-0">
+	<UFooter v-if="visible" class="border border-t-gray-200 border-b-0 border-x-0 mt-10">
 		<template #left>
 			<p class="text-muted text-sm">Архипова Татьяна © {{ new Date().getFullYear() }}</p>
 		</template>

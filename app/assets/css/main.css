@@ -27,6 +27,11 @@ h3 {
     font-weight: 450;
 }
 
+
+html {
+    background: #494D4E !important;
+}
+
 :root {
     --ui-primary: #494D4E;
 }

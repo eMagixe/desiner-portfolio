@@ -13,7 +13,7 @@
 		icon="i-simple-icons-gmail"
 		color="neutral"
 		variant="ghost"
-		to="3472886@gmail.com"
+		to="mailto:3472886@gmail.com"
 		target="_blank"
 		aria-label="X"
 	/>
