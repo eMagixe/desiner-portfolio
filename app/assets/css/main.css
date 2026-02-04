@@ -33,7 +33,11 @@ html {
 }
 
 :root {
-    --ui-primary: #494D4E;
+    --ui-bg: #494D4E;
+    --ui-bg-inverted: white;
+    --ui-bg-muted: #9D74FC;
+    --ui-bg-elevated: #9D74FC;
+    --ui-bg-accented: #9D74FC;
 }
 
 .ring-accented {

@@ -8,13 +8,11 @@ export default defineNuxtConfig({
 	},
 	devtools: { enabled: false },
 	ui: {
-		colorMode: true
+		colorMode: false
 	},
 	i18n: {
 		defaultLocale: 'ru',
-		locales: [
-			{ code: 'ru', name: 'Русский', file: 'ru.json' },
-		]
+		locales: [{ code: 'ru', name: 'Русский', file: 'ru.json' }]
 	},
 	ssr: true
 })
