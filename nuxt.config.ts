@@ -1,0 +1,20 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+	compatibilityDate: '2025-07-15',
+	css: ['~/assets/css/main.css'],
+	modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxt/image'],
+	icon: {
+		serverBundle: 'local'
+	},
+	devtools: { enabled: false },
+	ui: {
+		colorMode: true
+	},
+	i18n: {
+		defaultLocale: 'ru',
+		locales: [
+			{ code: 'ru', name: 'Русский', file: 'ru.json' },
+		]
+	},
+	ssr: true
+})

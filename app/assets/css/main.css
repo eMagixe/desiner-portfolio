@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+* {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ae8bfc;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+:root {
+    --ui-primary: #494D4E;
+}
+
+.ring-accented {
+    border: 1px solid #ae8bfc;
+}
+
+
+.dark {
+    --ui-bg: #494D4E;
+    --ui-bg-inverted: white;
+    --ui-bg-muted: #9D74FC;
+    --ui-bg-elevated: #9D74FC;
+    --ui-bg-accented: #9D74FC;
+}
+
+header {
+    border: 0 !important;
+}
+
+.background-index {
+    background: linear-gradient(rgba(157, 116, 252, 0.7), rgba(73, 77, 78, 0.9), #494D4E, #494D4E), url("/images/fon.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.actions {
+    a {
+        @apply bg-[#9D74FC];
+    }
+}
+
+.photo {
+    img {
+        --a: 2deg; /* угол поворота (чем меньше, тем лучше) */
+        width: 250px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        transform: perspective(400px) rotate3d(var(--r, 1, -1), 0, calc(var(--i, 1) * var(--a)));
+        -webkit-mask: linear-gradient(135deg, #000c 40%, #000, #000c 100%) 100% 100%/250% 250%;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    .alt {
+        --r: 1, 1;
+        -webkit-mask: linear-gradient(45deg, #000c 40%, #000, #000c 60%) 0 100%/250% 250%;
+    }
+
+    img:hover {
+        --i: -1;
+        -webkit-mask-position: 0 0;
+    }
+
+    .alt:hover {
+        -webkit-mask-position: 100% 0;
+    }
+}
